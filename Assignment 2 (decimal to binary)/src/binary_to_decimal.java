@@ -31,7 +31,8 @@ public class binary_to_decimal
 					user_in = user_in / 2;
 					i++;
 				}
-			// System.out.println(Arrays.toString(binary));		
+			// System.out.println(Arrays.toString(binary));
+			// System.out.println("Times through while loop: " + i);
 			{
 				System.out.print("The binary value is ");
 				// for loop to display binary array
