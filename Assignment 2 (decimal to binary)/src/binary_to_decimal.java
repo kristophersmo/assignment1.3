@@ -23,19 +23,20 @@ public class binary_to_decimal
 			// allocate memory to binary[]
 			binary = new int[1000];
 			// loop, convert decimal to binary + update array
-			// find remainder, then divide by two until 
+			// find remainder, divide by 2, update counter
 			int  i = 0;
-			while(user_in > 0)
+			while (user_in > 0)
 				{
 					binary[i] = user_in % 2;
 					user_in = user_in / 2;
 					i++;
 				}
+			// System.out.println(Arrays.toString(binary));		
 			{
 				System.out.print("The binary value is ");
 				// for loop to display binary array
 				// (initialExpression; testExpression; updateExpression)
-				for(int x =i-1 ; x>=0 ; x--)
+				for(int x=i-1 ; x>=0 ; x--)
 					System.out.print(binary[x]);
 			}
 		}
